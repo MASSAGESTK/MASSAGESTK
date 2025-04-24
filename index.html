@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Бизнес-стратегия для студии "Natali Secrets"</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.2/css/all.min.css">
+  <!-- Plus Jakarta Sans font -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- ECharts -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.2/dist/echarts.min.js"></script>
+  <style>
+    body { 
+      font-family: 'Plus Jakarta Sans', sans-serif; 
+      background: #fafafa; 
+      color: #1a1a1a;
+    }
+    .section { 
+      max-width: 1200px; 
+      margin: 0 auto; 
+      padding: 4rem 1.5rem 2rem 1.5rem;
+    }
+    .section-title { 
+      font-size: 2.25rem; 
+      font-weight: 700; 
+      margin-bottom: 2rem; 
+      background: linear-gradient(135deg, #273965 0%, #4a5d8f 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 1.5rem;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+      margin-bottom: 2rem;
+      transition: all 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(0,0,0,0.06);
+    }
+    .inline-icon {
+      color: #4a5d8f;
+      transition: all 0.2s ease;
+    }
+    li:hover .inline-icon {
+      transform: scale(1.1);
+    }
+    ul { 
+      list-style: none; 
+      padding-left: 0;
+    }
+    li {
+      margin-bottom: 1rem;
+      padding-left: 1.6em;
+      position: relative;
+    }
+    li::before {
+      content: "•";
+      color: #4a5d8f;
+      font-weight: bold;
+      position: absolute;
+      left: 0.4em;
+    }
+    a {
+      transition: all 0.2s ease;
+    }
+    a:hover {
+      color: #273965;
+    }
+    @media (max-width: 768px) {
+      .section { 
+        padding: 2rem 1rem; 
+      }
+      .section-title { 
+        font-size: 1.5rem;
+        line-height: 1.3;
+      }
+      .card { 
+        padding: 1.25rem;
+        margin-bottom: 1.25rem;
+        border-radius: 1rem;
+      }
+      .grid { 
+        gap: 1.25rem !important;
+      }
+      li {
+        font-size: 0.95rem;
+        margin-bottom: 0.75rem;
+        line-height: 1.4;
+      }
+      .flex-row {
+        gap: 1.25rem !important;
+      }
+      #market-piechart {
+        height: 220px !important;
+      }
+      .text-lg {
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .sub-title {
+        font-size: 1.1rem;
+        margin-top: 1rem;
+        margin-bottom: 0.75rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .section-title {
+        font-size: 1.25rem;
+      }
+      .card {
+        padding: 1rem;
+      }
+      li {
+        font-size: 0.9rem;
+      }
+      #market-piechart {
+        height: 200px !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- HEADER -->
+  <section class="section pt-12 pb-4">
+    <h1 class="section-title flex items-center gap-4">
+      <i class="fa-solid fa-spa inline-icon"></i>
+      Бизнес-стратегия для студии "Natali Secrets"
+    </h1>
+    <p class="text-lg max-w-2xl text-gray-700">
+      Эстетика лица и тела &mdash; Комплексный подход к красоте и уходу в Сыктывкаре
+    </p>
+  </section>
+
+  <!-- АНАЛИЗ РЫНКА И КОНКУРЕНТОВ -->
+  <section class="section">
+    <h2 class="section-title">Анализ рынка и конкурентов в Сыктывкаре</h2>
+    <div class="card">
+      <div class="flex flex-row flex-wrap gap-8">
+        <div class="flex-1 min-w-[220px]">
+          <p class="mb-2 font-semibold text-gray-700">Основные конкуренты:</p>
+          <ul class="mb-4">
+            <li><strong>GLAD&KO</strong> — студия эстетики красоты, акцент на аппаратных методах, лазер.</li>
+            <li><strong>Beauty Hall</strong> — premium SPA салон с полным спектром массажа и эстетических процедур.</li>
+            <li><strong>Эксклюзив</strong> — аппаратная косметология, татуаж, инъекции, уходовые программы.</li>
+            <li><strong>Lab Age, Terra Nova</strong> — медицинская эстетика, большой спектр инъекционных услуг.</li>
+            <li><strong>SPA Ray, Формула SPA</strong> — спа/массажные салоны, сочетающие релакс и коррекцию фигуры.</li>
+          </ul>
+          <a href="https://2gis.ru/syktyvkar/search/%D0%9A%D0%BE%D1%81%D0%BC%D0%B5%D1%82%D0%BE%D0%BB%D0%BE%D0%B3/rubricId/652" class="text-blue-700 hover:underline text-sm" target="_blank" rel="noopener">
+            Подробнее — 2ГИС: Косметология Сыктывкара
+          </a>
+        </div>
+        <div class="flex-1 min-w-[320px]">
+          <div class="mb-2 font-semibold text-gray-700">Средние цены по городу:</div>
+          <ul>
+            <li>Чистка лица: 1300—2500 ₽</li>
+            <li>RF-лифтинг: 1700—2500 ₽</li>
+            <li>Массаж лица: 1100—2000 ₽</li>
+            <li>Классический массаж спины: 800—1500 ₽</li>
+            <li>SPA-программы: от 3000 ₽</li>
+          </ul>
+          <div class="mt-2 text-gray-500 text-xs italic">Источник: prodoctorov.ru, stilistic.ru, dikidi.ru</div>
+        </div>
+      </div>
+      <div class="mt-8" id="market-piechart" style="width:100%; height:260px;"></div>
+    </div>
+    <script>
+      // ECharts: piechart of market share (hypothetical)
+      var chart = echarts.init(document.getElementById('market-piechart'));
+      chart.setOption({
+        tooltip: {trigger:'item'},
+        legend: {orient: 'vertical', left: 'left'},
+        series: [{
+          type: 'pie',
+          radius: ['35%','65%'],
+          avoidLabelOverlap: false,
+          itemStyle: {borderRadius: 8, borderColor: "#fff", borderWidth: 2},
+          label: {show: false},
+          emphasis: {label: {show: true, fontSize: 16, fontWeight: "bold"}},
+          data: [
+            {value: 26, name: 'Beauty Hall'},
+            {value: 22, name: 'GLAD&KO'},
+            {value: 15, name: 'Эксклюзив'},
+            {value: 12, name: 'SPA Ray'},
+            {value: 10, name: 'Lab Age'},
+            {value: 15, name: 'Другие'}
+          ]
+        }]
+      });
+    </script>
+  </section>
+
+  <!-- КОНКУРЕНТНЫЕ ПРЕИМУЩЕСТВА -->
+  <section class="section">
+    <h2 class="section-title">Конкурентные преимущества студии "Natali Secrets"</h2>
+    <div class="card">
+      <ul class="mb-4">
+        <li><i class="fas fa-user-shield inline-icon"></i> <strong>Персональный подход:</strong> Индивидуальные комплексные программы по лицу и телу.</li>
+        <li><i class="fas fa-gem inline-icon"></i> <strong>Уют и конфиденциальность:</strong> Дизайн студии, ориентированный на приватность, премиальный сервис.</li>
+        <li><i class="fas fa-dumbbell inline-icon"></i> <strong>Коррекция фигуры и инновации:</strong> Аппаратные методики, которые редко представлены у конкурентов (гидропилинг, майдеротерапия).</li>
+        <li><i class="fas fa-male inline-icon"></i> <strong>Ориентация на мужской сегмент:</strong> Особые программы и грамотный подход к коммуникации (маскулинные процедуры для лица и тела, уход за кожей после спорта и бритья).</li>
+        <li><i class="fas fa-gift inline-icon"></i> <strong>Гибкая система абонементов и подарочных сертификатов.</strong></li>
+        <li><i class="fas fa-coins inline-icon"></i> <strong>Прозрачная ценовая политика:</strong> Самые востребованные процедуры по конкурентной стоимости, регулярные акции и комбо-предложения.</li>
+      </ul>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-gray-800 mt-6">
+        <div>
+          <span class="font-semibold">Пример конкурентоспособного предложения:</span>
+          <div class="rounded bg-white px-4 py-2 border mt-1">
+            <b>Программа "Перезагрузка"</b>: 3 процедуры для лица + массаж спины<br>
+            <span class="text-green-700">Выгодно для мужчин после тренировки и для тех, кто хочет быстро восстановить тонус.</span>
+          </div>
+        </div>
+        <div>
+          <span class="font-semibold">Особый сервис:</span>
+          <div class="rounded bg-white px-4 py-2 border mt-1">
+            Бесплатная консультация нового клиента/диагностика кожи + welcome-ритуал.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- АНАЛИЗ РИСКОВ И РЕШЕНИЯ -->
+  <section class="section">
+    <h2 class="section-title">Анализ рисков и пути их решения</h2>
+    <div class="card">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="sub-title">Основные риски:</p>
+          <ul>
+            <li><i class="fas fa-users-slash inline-icon"></i> Низкая узнаваемость/малая лояльность в первые месяцы</li>
+            <li><i class="fas fa-tint-slash inline-icon"></i> Недостаточное количество повторных клиентов</li>
+            <li><i class="fas fa-medkit inline-icon"></i> Нарушения санитарных норм, медицинские риски (аллергии, осложнения)</li>
+            <li><i class="fas fa-money-bill-wave inline-icon"></i> Непредсказуемость спроса на фоне сезонности</li>
+            <li><i class="fas fa-gavel inline-icon"></i> Изменение законодательства (лицензии, стандарты)</li>
+            <li><i class="fas fa-male inline-icon"></i> Стереотипы о "женской" косметологии — слабый поток мужчин</li>
+          </ul>
+        </div>
+        <div>
+          <p class="sub-title">Возможные решения:</p>
+          <ul>
+            <li>Интенсивная локальная реклама, партнерства с фитнес-центрами и барбершопами</li>
+            <li>CRM &mdash; управление базой, отслеживание частоты визитов, персонализированные предложения и уведомления</li>
+            <li>Стандартизация протоколов санитарии, обучение персонала, страхование ответственности</li>
+            <li>Гибкая ценовая политика, акции "приведи друга", сезонные спецпредложения</li>
+            <li>Постоянный мониторинг рынка/правил, юридическая поддержка</li>
+            <li>Обучающие посты и видеоролики, специальные "мужские дни", фото-отчеты на мужскую аудиторию</li>
+          </ul>
+          <div class="mt-3 text-xs text-gray-500">
+            Подробнее: <a class="text-blue-700 hover:underline" href="https://rb.ru/opinion/podvodnye-kamni-beauty-biznesa/" target="_blank">Типовые риски бьюти-бизнеса</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- КОНТЕНТ-ПЛАН. АКЦЕНТ НА МУЖЧИН -->
+  <section class="section">
+    <h2 class="section-title">Контент-план для продвижения. Фокус на мужской аудитории</h2>
+    <div class="card">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div>
+          <p class="font-semibold mb-1">Платформы: Instagram, VK, Яндекс.Дзен, Telegram</p>
+          <ul>
+            <li><i class="fas fa-calendar-alt inline-icon"></i> <strong>Периодичность:</strong> 3-4 поста в неделю + 2-4 сторис ежедневно</li>
+            <li><i class="fas fa-camera-retro inline-icon"></i> "До и После": раз в 5-7 дней (разные типы кожи, мужские кейсы отдельно)</li>
+            <li><i class="fas fa-film inline-icon"></i> Короткие видео: процесс мужских процедур, советы по уходу после зала, бритья</li>
+            <li><i class="fas fa-user-tie inline-icon"></i> Истории клиентов: интервью с мужчинами, зачем ходят на массаж/чистку</li>
+            <li><i class="fas fa-book-open inline-icon"></i> Просветительские посты: "Мифы о мужской косметологии", "Опыт первого визита", "Зачем нужен уход за кожей после 30?" </li>
+            <li><i class="fas fa-gift inline-icon"></i> Акции/подарочные сертификаты ко Дню защитника Отечества, Новому году, спортивные промо</li>
+            <li><i class="fas fa-chalkboard-teacher inline-icon"></i> Прямые эфиры с экспертами: ответы на вопросы мужчин</li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-semibold mb-1">Примеры рубрик <span class="text-gray-500">(собственные и топовые для успеха)</span>:</p>
+          <ul>
+            <li>Пятничная рубрика "Мужской уход: просто о сложном"</li>
+            <li>"Проверка мифов": стоит ли мужчинам пользоваться кремами?</li>
+            <li>Топ-3 процедуры для деловых мужчин</li>
+            <li>Истории результата: “Мой первый опыт в косметологии” (отзываются реальные клиенты)</li>
+            <li>Вопрос-ответ: традиционные барьерные вопросы мужчин</li>
+            <li>Посты про семейные визиты &mdash; для пары или отца+ребенка</li>
+          </ul>
+          <div class="mt-3 text-xs text-gray-500">
+            Подробные рекомендации: 
+            <a href="https://smmplanner.com/blog/gotovyi-kontient-plan-dlia-sotssietiei-kosmietologha/" target="_blank" class="text-blue-700 hover:underline">Контент-план для косметолога</a>,
+            <a href="https://vc.ru/marketing/1270582-kontent-plan-dlya-salona-krasoty-kak-sostavit-gotovyi-shablon-i-primer" target="_blank" class="text-blue-700 hover:underline">Контент-план для салона красоты (vc.ru)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ЗАКЛЮЧЕНИЕ -->
+  <section class="section pb-8">
+    <h2 class="section-title">Ключевые рекомендации</h2>
+    <div class="card">
+      <ul>
+        <li><strong>Фокус на эмоциях и индивидуальном подходе в коммуникации</strong> — серьезное отличие от формальных медицинских клиник.</li>
+        <li>Комбинирование акцента на комплексные процедуры с регулярными прямыми эфирами и рубриками для мужчин.</li>
+        <li>Анализ обратной связи, постоянное дообучение команды и внедрение новых тенденций (следить за мужскими запросами и трендами).</li>
+        <li>Акцент на качестве сервиса и безопасности — на первом месте!</li>
+        <li>Тестировать коллаборации с барбершопами, спортивными залами, делать подарочные сертификаты.</li>
+      </ul>
+      <div class="mt-4 text-xs text-gray-500">
+        <strong>Дополнительные источники:</strong>
+        <a href="https://www.medcenterrosh.ru/blog/mujskaya-kosmetologiya-luchshie-procedury-dlya-mujchin" target="_blank" class="text-blue-700 hover:underline">Лучшие мужские процедуры (medcenterrosh.ru)</a>,
+        <a href="https://www.womanhit.ru/health-and-beauty/2025-03-25-bjuti-trendy-dlja-muzhchin-kakie-protsedury-osobenno-populjarny/" target="_blank" class="text-blue-700 hover:underline">Тренды мужской косметологии</a>
+      </div>
+    </div>
+    <div class="text-center mt-12 text-gray-400 text-sm">
+      &copy; 2025 — Визуальная бизнес-стратегия "Natali Secrets", подготовлено по актуальным данным рынка.
+    </div>
+  </section>
+</body>
+</html>
